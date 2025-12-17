@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="street" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b1c2f"/>
+      <stop offset="100%" stop-color="#0d2f3f"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#1bd5ff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1bd5ff" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#street)"/>
+  <rect x="0" y="640" width="1600" height="260" fill="#0a1a28"/>
+  <rect x="460" y="120" width="680" height="520" fill="url(#glow)" opacity="0.6"/>
+  <g fill="#16344a" stroke="#1bd5ff" stroke-width="4" opacity="0.45">
+    <rect x="260" y="120" width="120" height="420" rx="10"/>
+    <rect x="1220" y="140" width="120" height="360" rx="10"/>
+  </g>
+  <g fill="none" stroke="#1bd5ff" stroke-width="3" opacity="0.65">
+    <path d="M220 190 h120"/>
+    <path d="M1260 190 h120"/>
+    <path d="M240 260 h90"/>
+    <path d="M1240 260 h90"/>
+  </g>
+  <g transform="translate(650 250)">
+    <ellipse cx="140" cy="410" rx="260" ry="40" fill="#081521" opacity="0.7"/>
+    <path d="M200 120 q40 20 30 70 l-30 140 q-8 40 -50 30 l-90 -20 q-45 -10 -30 -60 l36 -124 q12 -44 58 -50 z" fill="#1b405c" stroke="#1bd5ff" stroke-width="6"/>
+    <circle cx="210" cy="70" r="70" fill="#1f4f70" stroke="#1bd5ff" stroke-width="6"/>
+    <path d="M190 60 q10 -22 26 -22 20 0 28 18 6 16 -2 34 -12 26 -44 26 -22 0 -34 -14" fill="#d8e9ff" opacity="0.95"/>
+    <path d="M154 210 l-54 180 q-6 22 12 30 l36 10 q20 6 28 -16 l60 -172" fill="#0f2f45" stroke="#1bd5ff" stroke-width="6"/>
+    <path d="M138 350 l-68 76 q-14 16 4 28 l32 22 q18 12 30 -6 l64 -86" fill="#123957" stroke="#1bd5ff" stroke-width="6"/>
+    <path d="M242 360 l66 90 q14 18 -4 32 l-32 24 q-16 12 -28 -8 l-68 -102" fill="#123957" stroke="#1bd5ff" stroke-width="6"/>
+  </g>
+  <g fill="none" stroke="#1bd5ff" stroke-width="6" opacity="0.9">
+    <path d="M220 90 c100 0 120 120 220 120s120-120 220-120 120 120 220 120 120-120 220-120" stroke-dasharray="20 12"/>
+  </g>
+  <g fill="#1bd5ff" font-family="'Noto Sans TC', 'Noto Sans', 'Microsoft JhengHei', sans-serif" font-weight="700" font-size="66">
+    <text x="320" y="200">跑在城市巷弄間</text>
+    <text x="320" y="280">Vibe Coding 的大叔筆記</text>
+  </g>
+  <g fill="#f2f7ff" font-family="'Noto Sans TC', 'Noto Sans', 'Microsoft JhengHei', sans-serif" font-size="32" opacity="0.8">
+    <text x="320" y="340">夜跑、AI、咖啡香，都是生活的節奏。</text>
+  </g>
+  <g fill="#1bd5ff" opacity="0.85">
+    <circle cx="1340" cy="420" r="10"/>
+    <circle cx="1380" cy="430" r="8"/>
+    <rect x="1360" y="400" width="8" height="46" rx="4"/>
+  </g>
+</svg>
