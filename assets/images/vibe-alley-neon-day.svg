@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Runner in a neon alley at sunset">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffa75f"/>
+      <stop offset="35%" stop-color="#ff6f78"/>
+      <stop offset="100%" stop-color="#0c0d24"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3cf6ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f93de0" stop-opacity="0.7"/>
+    </linearGradient>
+    <radialGradient id="puddle" cx="50%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#56d0ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#111326" stop-opacity="0.8"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0"/>
+      <feBlend in="SourceGraphic" mode="soft-light"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#0c0d24"/>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#puddle)" opacity="0.9"/>
+  <g filter="url(#grain)">
+    <rect x="120" y="100" width="230" height="760" rx="18" fill="#0f1026" stroke="#0be0ff" stroke-width="6" opacity="0.6"/>
+    <rect x="1250" y="110" width="230" height="740" rx="18" fill="#0f1026" stroke="#ff3ddc" stroke-width="6" opacity="0.6"/>
+    <rect x="360" y="140" width="260" height="160" rx="12" fill="#0be0ff" opacity="0.18"/>
+    <rect x="980" y="170" width="250" height="140" rx="12" fill="#ff3ddc" opacity="0.2"/>
+  </g>
+  <g opacity="0.35">
+    <rect x="90" y="210" width="150" height="460" rx="10" fill="#10c5f4"/>
+    <rect x="1310" y="240" width="150" height="430" rx="10" fill="#f530e3"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-width="6" opacity="0.8">
+    <path d="M260 430c80-60 150-50 220 20" stroke="#3df2ff"/>
+    <path d="M1140 420c-70-70-140-70-210 10" stroke="#ff6bdc"/>
+  </g>
+  <g fill="none" stroke="#3df2ff" stroke-width="4" opacity="0.8">
+    <rect x="380" y="310" width="180" height="100" rx="12"/>
+    <polyline points="410,360 460,330 510,360"/>
+    <line x1="420" y1="380" x2="500" y2="380"/>
+    <rect x="1020" y="310" width="170" height="90" rx="12" stroke="#ff6bdc"/>
+  </g>
+  <g>
+    <circle cx="820" cy="460" r="210" fill="url(#glow)" opacity="0.15"/>
+    <circle cx="820" cy="460" r="140" fill="url(#glow)" opacity="0.25"/>
+  </g>
+  <g fill="#fdfdfd">
+    <circle cx="810" cy="320" r="24" fill="#0be0ff" opacity="0.8"/>
+    <circle cx="920" cy="580" r="18" fill="#ff3ddc" opacity="0.8"/>
+  </g>
+  <g stroke="#3cf6ff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M780 560c-18 18-60 20-92-6" opacity="0.9"/>
+    <path d="M760 600c-20 8-46 8-70-10" opacity="0.8"/>
+  </g>
+  <g transform="translate(720 260)">
+    <path d="M120 80c-12 22-14 44-6 70l-28 12-40-28c-26-8-52 10-52 36 10 64 52 108 116 136 40 10 68-10 86-46l30 8c12-4 26-22 20-44l-22-14c10-20 12-44-10-66-26-30-70-40-94-64z" fill="#10c5f4" opacity="0.9"/>
+    <circle cx="134" cy="52" r="38" fill="#fefefe"/>
+    <circle cx="140" cy="48" r="32" fill="#ffd29c"/>
+    <path d="M110 30c18-28 72-40 94 12 12 28-2 62-10 74-6-6-18-10-30-8-12 2-24 8-32 18-8-22-14-40-32-58 0-12 6-24 10-38z" fill="#0f1a36" opacity="0.85"/>
+    <rect x="158" y="120" width="46" height="72" rx="18" fill="#0f1a36" opacity="0.9"/>
+    <path d="M100 200c28 24 84 28 122 0" stroke="#0f1a36" stroke-width="16" stroke-linecap="round" fill="none" opacity="0.4"/>
+  </g>
+</svg>

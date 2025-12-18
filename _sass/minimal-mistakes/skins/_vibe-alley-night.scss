@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Vibe Alley Night skin — moody teal rain inspired by the night alley artwork
+   ========================================================================== */
+
+/* Colors */
+$background-color: #071019 !default;
+$text-color: #e5f7ff !default;
+$muted-text-color: mix(#6be0f0, $background-color, 45%) !default;
+$primary-color: #61f1ff !default;
+$accent-color: #5af6c7 !default;
+$border-color: mix(#fff, $background-color, 14%) !default;
+$code-background-color: mix(#000, $background-color, 16%) !default;
+$code-background-color-dark: mix(#000, $background-color, 22%) !default;
+$form-background-color: mix(#000, $background-color, 16%) !default;
+$footer-background-color: mix($background-color, #0f2434, 50%) !default;
+$link-color: $primary-color !default;
+$link-color-hover: mix(#fff, $primary-color, 18%) !default;
+$link-color-visited: mix(#000, $primary-color, 20%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 16%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 24%) !default;
+
+/* Notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 94% !default;
+
+/* base16 cool teal syntax */
+$base00: #0a1320 !default;
+$base01: #122133 !default;
+$base02: #1b2d42 !default;
+$base03: #3c526c !default;
+$base04: #5e7a91 !default;
+$base05: #c4d4e0 !default;
+$base06: #e0ebf5 !default;
+$base07: #f5fbff !default;
+$base08: #5ff4ff !default;
+$base09: #6af1c8 !default;
+$base0a: #a5f29a !default;
+$base0b: #8bf4e3 !default;
+$base0c: #75d7ff !default;
+$base0d: #6bd1ff !default;
+$base0e: #8fa8ff !default;
+$base0f: #a0c4ff !default;
+
+:root {
+  --vibe-hero-image: url('../images/vibe-alley-rainy-night.svg');
+  --vibe-overlay-strong: rgba(5, 11, 20, 0.75);
+  --vibe-overlay-soft: rgba(10, 20, 35, 0.6);
+  --vibe-glow: 0 0 20px rgba(97, 241, 255, 0.24), 0 0 30px rgba(90, 246, 199, 0.24);
+}
+
+body {
+  background: radial-gradient(circle at 10% 18%, rgba(97, 241, 255, 0.08), transparent 36%),
+              radial-gradient(circle at 78% 24%, rgba(90, 246, 199, 0.06), transparent 42%),
+              linear-gradient(165deg, rgba(9, 16, 27, 0.96), rgba(6, 12, 19, 0.96)),
+              url('../images/vibe-alley-rainy-night.svg') center/cover fixed no-repeat;
+  color: $text-color;
+  box-shadow: inset 0 0 0 1px rgba(97, 241, 255, 0.05);
+}
+
+.page__hero--overlay {
+  background-image: linear-gradient(180deg, var(--vibe-overlay-soft), var(--vibe-overlay-strong)), var(--vibe-hero-image);
+  box-shadow: var(--vibe-glow);
+}
+
+.page__title,
+.page__lead,
+.archive__item-title,
+.masthead__menu-item a {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.65);
+}
+
+blockquote {
+  border-left-color: $primary-color;
+  box-shadow: var(--vibe-glow);
+}

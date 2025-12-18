@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Vibe Alley Ink skin — minimalist ink-wash take with teal signage accents
+   ========================================================================== */
+
+/* Colors */
+$background-color: #0a0d14 !default;
+$text-color: #eef5ff !default;
+$muted-text-color: mix(#8ad4df, $background-color, 60%) !default;
+$primary-color: #7adcf0 !default;
+$accent-color: #5cf0c9 !default;
+$border-color: mix(#fff, $background-color, 20%) !default;
+$code-background-color: mix(#000, $background-color, 18%) !default;
+$code-background-color-dark: mix(#000, $background-color, 24%) !default;
+$form-background-color: mix(#000, $background-color, 18%) !default;
+$footer-background-color: mix($background-color, #05070c, 80%) !default;
+$link-color: $primary-color !default;
+$link-color-hover: mix(#fff, $primary-color, 14%) !default;
+$link-color-visited: mix(#000, $primary-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 16%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 26%) !default;
+
+/* Notices */
+$notice-background-mix: 92% !default;
+$code-notice-background-mix: 95% !default;
+
+/* base16 ink syntax */
+$base00: #0c1018 !default;
+$base01: #131927 !default;
+$base02: #1c2232 !default;
+$base03: #3e4a60 !default;
+$base04: #6b7691 !default;
+$base05: #d4ddef !default;
+$base06: #e7edfa !default;
+$base07: #f9fbff !default;
+$base08: #7bdcf3 !default;
+$base09: #9ae5d0 !default;
+$base0a: #ced4ff !default;
+$base0b: #a7f2e1 !default;
+$base0c: #8fe1ff !default;
+$base0d: #8cb6ff !default;
+$base0e: #c0c7ff !default;
+$base0f: #e6ceff !default;
+
+:root {
+  --vibe-hero-image: url('../images/vibe-alley-rainy-night.svg');
+  --vibe-overlay-strong: rgba(5, 7, 12, 0.82);
+  --vibe-overlay-soft: rgba(10, 14, 20, 0.62);
+  --vibe-grain: linear-gradient(0deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+}
+
+body {
+  background: var(--vibe-grain),
+              linear-gradient(125deg, rgba(10, 16, 26, 0.96), rgba(9, 12, 20, 0.98)),
+              url('../images/vibe-alley-rainy-night.svg') center/cover fixed no-repeat;
+  color: $text-color;
+  letter-spacing: 0.03em;
+}
+
+.page__hero--overlay {
+  background-image: linear-gradient(180deg, var(--vibe-overlay-soft), var(--vibe-overlay-strong)), var(--vibe-hero-image);
+  filter: saturate(1.05) contrast(1.05);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans TC', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(122, 220, 240, 0.55), transparent);
+}

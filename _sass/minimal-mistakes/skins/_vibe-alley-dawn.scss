@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Vibe Alley Dawn skin — neon sunrise inspired by the alley runner artwork
+   ========================================================================== */
+
+/* Colors */
+$background-color: #0d0f20 !default;
+$text-color: #f7fbff !default;
+$muted-text-color: mix(#6ceaf7, $background-color, 55%) !default;
+$primary-color: #35e4ff !default;
+$accent-color: #ff47d8 !default;
+$border-color: mix(#fff, $background-color, 18%) !default;
+$code-background-color: mix(#000, $background-color, 18%) !default;
+$code-background-color-dark: mix(#000, $background-color, 24%) !default;
+$form-background-color: mix(#000, $background-color, 18%) !default;
+$footer-background-color: mix($accent-color, #05040b, 14%) !default;
+$link-color: $accent-color !default;
+$link-color-hover: mix(#fff, $accent-color, 20%) !default;
+$link-color-visited: mix(#000, $accent-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 18%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 26%) !default;
+
+/* Notices */
+$notice-background-mix: 88% !default;
+$code-notice-background-mix: 92% !default;
+
+/* base16 inspired neon syntax */
+$base00: #0f1124 !default;
+$base01: #1b1f33 !default;
+$base02: #262b3f !default;
+$base03: #6f7ba5 !default;
+$base04: #93a3cc !default;
+$base05: #c9d4f5 !default;
+$base06: #e6ebff !default;
+$base07: #f7fbff !default;
+$base08: #ff69ce !default;
+$base09: #ff9f68 !default;
+$base0a: #ffd166 !default;
+$base0b: #7ef8c4 !default;
+$base0c: #53e9ff !default;
+$base0d: #5cb5ff !default;
+$base0e: #c78fff !default;
+$base0f: #f3b3ff !default;
+
+:root {
+  --vibe-hero-image: url('../images/vibe-alley-neon-day.svg');
+  --vibe-overlay-strong: rgba(12, 13, 32, 0.65);
+  --vibe-overlay-soft: rgba(15, 18, 41, 0.55);
+  --vibe-glow: 0 0 24px rgba(83, 233, 255, 0.35), 0 0 36px rgba(255, 71, 216, 0.25);
+}
+
+body {
+  background: radial-gradient(circle at 20% 20%, rgba(255, 111, 120, 0.08), transparent 45%),
+              radial-gradient(circle at 80% 15%, rgba(83, 233, 255, 0.12), transparent 42%),
+              radial-gradient(circle at 50% 70%, rgba(255, 71, 216, 0.08), transparent 55%),
+              linear-gradient(145deg, rgba(15, 19, 43, 0.96), rgba(8, 10, 28, 0.95)),
+              url('../images/vibe-alley-neon-day.svg') center/cover fixed no-repeat;
+  color: $text-color;
+  box-shadow: inset 0 0 0 1px rgba(83, 233, 255, 0.05);
+}
+
+.page__hero--overlay {
+  background-image: linear-gradient(180deg, var(--vibe-overlay-soft), var(--vibe-overlay-strong)), var(--vibe-hero-image);
+  box-shadow: var(--vibe-glow);
+}
+
+.btn,
+.pagination--pager,
+.site-title,
+.masthead__menu-item a {
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.page__title,
+.page__lead,
+.archive__item-title {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
+}
