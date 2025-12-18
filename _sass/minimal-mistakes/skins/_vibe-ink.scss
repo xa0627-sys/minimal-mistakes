@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Vibe Ink skin — monochrome base with teal glow, using the night illustration as a watermark
+   ========================================================================== */
+
+/* Colors */
+$background-color: #0b0d12 !default;
+$text-color: #eef5ff !default;
+$primary-color: #1ad1ca !default;
+$secondary-color: #14a4c4 !default;
+$muted-text-color: mix(#cfdced, $background-color, 68%) !default;
+$border-color: mix(#fff, $background-color, 14%) !default;
+$code-background-color: mix(#000, $background-color, 10%) !default;
+$code-background-color-dark: mix(#000, $background-color, 14%) !default;
+$form-background-color: mix(#000, $background-color, 12%) !default;
+$footer-background-color: mix($background-color, #1ad1ca, 18%) !default;
+$link-color: $primary-color !default;
+$link-color-hover: mix(#fff, $primary-color, 15%) !default;
+$link-color-visited: mix(#000, $primary-color, 22%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix($text-color, $primary-color, 18%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 26%) !default;
+
+/* notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 94% !default;
+
+/* syntax highlighting */
+$base00: #0b0d12 !default;
+$base01: #111620 !default;
+$base02: #161d2c !default;
+$base03: #1e2637 !default;
+$base04: #eef5ff !default;
+$base05: #f3f8ff !default;
+$base06: #f9fbff !default;
+$base07: #ffffff !default;
+$base08: #1ad1ca !default;
+$base09: #5fd2c5 !default;
+$base0a: #ffc86b !default;
+$base0b: #7bd79a !default;
+$base0c: #34cedd !default;
+$base0d: #7aa7ff !default;
+$base0e: #b58aff !default;
+$base0f: #f0789c !default;
+
+$ink-wallpaper: url("{{ "/assets/images/vibe-coding-night.svg" | relative_url }}");
+
+body {
+  background-color: $background-color;
+  background-image: linear-gradient(180deg, rgba(11, 13, 18, 0.9), rgba(11, 13, 18, 0.75)),
+                    $ink-wallpaper;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+.page__hero--overlay {
+  background-image: linear-gradient(115deg, rgba(11, 13, 18, 0.9), rgba(20, 164, 196, 0.35)), $ink-wallpaper;
+  background-size: cover;
+  background-position: center;
+  color: $text-color;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+
+.page__title,
+.masthead__menu-item > a,
+.breadcrumbs__item { color: $text-color; }
+
+.pagination--pager {
+  color: $text-color;
+  background-color: $secondary-color;
+  border-color: transparent;
+
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}

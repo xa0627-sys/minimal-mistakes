@@ -445,7 +445,7 @@ zh-TW: &DEFAULT_ZH_HANT
   less_than                  : "少於"
   minute_read                : "分鐘閱讀"
   share_on_label             : "分享至"
-  meta_label                 :
+  meta_label                 : "文章資訊"
   tags_label                 : "標籤:"
   categories_label           : "分類:"
   date_label                 : "更新時間:"
@@ -2180,6 +2180,3 @@ bg: &DEFAULT_BG
 bg-BG:
   <<: *DEFAULT_BG
 
-# Another locale
-# --------------
-#

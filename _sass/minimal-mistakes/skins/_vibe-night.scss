@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Vibe Night skin — inspired by the calm alley jog illustration
+   ========================================================================== */
+
+/* Colors */
+$background-color: #0a101d !default;
+$text-color: #e5f0ff !default;
+$primary-color: #35c7e0 !default;
+$secondary-color: #7cd0ff !default;
+$muted-text-color: mix(#d2e4ff, $background-color, 65%) !default;
+$border-color: mix(#fff, $background-color, 18%) !default;
+$code-background-color: mix(#000, $background-color, 12%) !default;
+$code-background-color-dark: mix(#000, $background-color, 16%) !default;
+$form-background-color: mix(#000, $background-color, 14%) !default;
+$footer-background-color: mix(#0a101d, $primary-color, 20%) !default;
+$link-color: $primary-color !default;
+$link-color-hover: mix(#fff, $primary-color, 15%) !default;
+$link-color-visited: mix(#000, $primary-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix($text-color, $primary-color, 20%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 28%) !default;
+
+/* notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 94% !default;
+
+/* syntax highlighting */
+$base00: #0a101d !default;
+$base01: #0f1929 !default;
+$base02: #152236 !default;
+$base03: #1b2c46 !default;
+$base04: #e5f0ff !default;
+$base05: #f1f6ff !default;
+$base06: #f8fbff !default;
+$base07: #ffffff !default;
+$base08: #55b5db !default;
+$base09: #79c6a9 !default;
+$base0a: #ffd479 !default;
+$base0b: #9de080 !default;
+$base0c: #58d1eb !default;
+$base0d: #7fa9ff !default;
+$base0e: #d08cfe !default;
+$base0f: #f072a3 !default;
+
+$night-wallpaper: url("{{ "/assets/images/vibe-coding-night.svg" | relative_url }}");
+
+body {
+  background-image: linear-gradient(180deg, rgba(10, 16, 29, 0.9) 0%, rgba(10, 16, 29, 0.75) 35%, rgba(10, 16, 29, 0.85) 100%),
+                    $night-wallpaper;
+  background-color: $background-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.page__hero--overlay {
+  background-image: linear-gradient(90deg, rgba(10, 16, 29, 0.92), rgba(10, 16, 29, 0.6)), $night-wallpaper;
+  background-size: cover;
+  background-position: center;
+  color: $text-color;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+.page__title,
+.masthead__menu-item > a {
+  color: $text-color;
+}
+
+.sidebar { background-color: mix(#0a101d, #0f1929, 70%); }
+
+.pagination--pager {
+  color: $text-color;
+  background-color: $primary-color;
+  border-color: transparent;
+
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}
