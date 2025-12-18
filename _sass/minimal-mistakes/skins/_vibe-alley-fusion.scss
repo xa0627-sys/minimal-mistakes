@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Vibe Alley Fusion skin
+   Hybrid magenta-teal palette with luminous panels and glassmorphism.
+   ========================================================================== */
+
+/* Colors */
+$background-color: #0a0a12 !default;
+$text-color: #f2f7ff !default;
+$primary-color: #6ef7de !default;
+$border-color: mix(#fff, $background-color, 18%) !default;
+$code-background-color: mix(#05050b, $background-color, 18%) !default;
+$code-background-color-dark: mix(#05050b, $background-color, 26%) !default;
+$form-background-color: mix(#05050b, $background-color, 20%) !default;
+$footer-background-color: #07070d !default;
+$link-color: #ff7ac3 !default;
+$link-color-hover: mix(#fff, $link-color, 20%) !default;
+$link-color-visited: mix(#06060a, $link-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 18%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 32%) !default;
+
+/* notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 95% !default;
+
+/* syntax highlighting */
+$base00: #0a0a12 !default;
+$base01: #141424 !default;
+$base02: #202036 !default;
+$base03: #4e5170 !default;
+$base04: #a8aed1 !default;
+$base05: #dfe6ff !default;
+$base06: #f2f7ff !default;
+$base07: #ffffff !default;
+$base08: #ff7ac3 !default;
+$base09: #ffb46b !default;
+$base0a: #ffe08f !default;
+$base0b: #9af7d6 !default;
+$base0c: #5de6ff !default;
+$base0d: #9bb0ff !default;
+$base0e: #d1a6ff !default;
+$base0f: #ff8b70 !default;
+
+:root {
+  --vibe-hero-image: url('/assets/images/vibe-alley-sunset.svg');
+  --vibe-hero-gradient: linear-gradient(120deg, rgba(110, 247, 222, 0.35), rgba(255, 122, 195, 0.6));
+  --vibe-panel: rgba(22, 22, 38, 0.72);
+  --vibe-chip: rgba(93, 230, 255, 0.2);
+}
+
+body {
+  background: linear-gradient(135deg, rgba(110, 247, 222, 0.08), rgba(255, 122, 195, 0.06)), $background-color;
+  color: $text-color;
+}
+
+.page__hero--overlay {
+  background-image: var(--vibe-hero-gradient), var(--vibe-hero-image);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.46);
+}
+
+.page__title,
+.page__lead { text-shadow: 0 8px 26px rgba(0, 0, 0, 0.45); }
+
+.card,
+.sidebar,
+.toc,
+.highlighter-rouge,
+.notice {
+  background: var(--vibe-panel);
+  border: 1px solid $border-color;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+.meta-list li { background: var(--vibe-chip); }

@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Vibe Alley Night skin
+   Cool teal night run palette matching the calm alley illustration.
+   ========================================================================== */
+
+/* Colors */
+$background-color: #0b111b !default;
+$text-color: #e7f2ff !default;
+$primary-color: #59e0da !default;
+$border-color: mix(#fff, $background-color, 14%) !default;
+$code-background-color: mix(#05070c, $background-color, 16%) !default;
+$code-background-color-dark: mix(#05070c, $background-color, 24%) !default;
+$form-background-color: mix(#05070c, $background-color, 18%) !default;
+$footer-background-color: #080c13 !default;
+$link-color: #6ad8ff !default;
+$link-color-hover: mix(#fff, $link-color, 20%) !default;
+$link-color-visited: mix(#0b101a, $link-color, 28%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 18%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+
+/* notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 95% !default;
+
+/* syntax highlighting */
+$base00: #0b0f18 !default;
+$base01: #131b29 !default;
+$base02: #1c2838 !default;
+$base03: #4a5a6d !default;
+$base04: #9ab2c9 !default;
+$base05: #dbeaf7 !default;
+$base06: #e7f2ff !default;
+$base07: #ffffff !default;
+$base08: #59e0da !default;
+$base09: #f2ae66 !default;
+$base0a: #ffd58f !default;
+$base0b: #7df3c7 !default;
+$base0c: #6ad8ff !default;
+$base0d: #8fb6ff !default;
+$base0e: #c1a7ff !default;
+$base0f: #f2817c !default;
+
+:root {
+  --vibe-hero-image: url('/assets/images/vibe-alley-night.svg');
+  --vibe-hero-gradient: linear-gradient(160deg, rgba(106, 216, 255, 0.35), rgba(11, 17, 27, 0.9));
+  --vibe-panel: rgba(17, 27, 40, 0.85);
+  --vibe-chip: rgba(106, 216, 255, 0.2);
+}
+
+body {
+  background: radial-gradient(circle at 18% 12%, rgba(90, 148, 255, 0.14), transparent 42%),
+              radial-gradient(circle at 78% 22%, rgba(89, 224, 218, 0.12), transparent 48%),
+              $background-color;
+  color: $text-color;
+}
+
+.page__hero--overlay {
+  background-image: var(--vibe-hero-gradient), var(--vibe-hero-image);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+.page__title,
+.page__lead { text-shadow: 0 6px 22px rgba(0, 0, 0, 0.45); }
+
+.card,
+.sidebar,
+.toc,
+.highlighter-rouge,
+.notice {
+  background: var(--vibe-panel);
+  border: 1px solid $border-color;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+.meta-list li { background: var(--vibe-chip); }

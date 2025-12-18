@@ -1,0 +1,87 @@
+/* ==========================================================================
+   Vibe Alley Sunset skin
+   A vivid sunset alley palette with neon cyan and magenta inspired by the AI alley artwork.
+   ========================================================================== */
+
+/* Colors */
+$background-color: #0e0c18 !default;
+$text-color: #f7f4ff !default;
+$primary-color: #ff5f9f !default;
+$border-color: mix(#fff, $background-color, 12%) !default;
+$code-background-color: mix(#05060d, $background-color, 12%) !default;
+$code-background-color-dark: mix(#05060d, $background-color, 22%) !default;
+$form-background-color: mix(#05060d, $background-color, 14%) !default;
+$footer-background-color: #0a0810 !default;
+$link-color: #3be0dd !default;
+$link-color-hover: mix(#fff, $link-color, 18%) !default;
+$link-color-visited: mix(#0c0b10, $link-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 22%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+
+/* notices */
+$notice-background-mix: 88% !default;
+$code-notice-background-mix: 94% !default;
+
+/* syntax highlighting (base16-inspired) */
+$base00: #0d0c14 !default;
+$base01: #1a1724 !default;
+$base02: #2a2338 !default;
+$base03: #5c5570 !default;
+$base04: #b6aedd !default;
+$base05: #e8e3ff !default;
+$base06: #f7f4ff !default;
+$base07: #ffffff !default;
+$base08: #ff5f9f !default;
+$base09: #ffa84d !default;
+$base0a: #ffd166 !default;
+$base0b: #7df3c7 !default;
+$base0c: #3be0dd !default;
+$base0d: #86a9ff !default;
+$base0e: #c58cff !default;
+$base0f: #f26e3c !default;
+
+:root {
+  --vibe-hero-image: url('/assets/images/vibe-alley-sunset.svg');
+  --vibe-hero-gradient: linear-gradient(145deg, rgba(252, 70, 107, 0.82), rgba(59, 224, 221, 0.55));
+  --vibe-panel: rgba(20, 19, 38, 0.8);
+  --vibe-chip: rgba(255, 95, 159, 0.25);
+}
+
+body {
+  background: radial-gradient(circle at 25% 20%, rgba(255, 95, 159, 0.14), transparent 40%),
+              radial-gradient(circle at 80% 10%, rgba(59, 224, 221, 0.16), transparent 46%),
+              $background-color;
+  color: $text-color;
+}
+
+.page__hero--overlay {
+  background-image: var(--vibe-hero-gradient), var(--vibe-hero-image);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+.page__title,
+.page__lead {
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.btn,
+input[type="submit"],
+.button {
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(255, 95, 159, 0.35);
+}
+
+.card,
+.sidebar,
+.toc,
+.highlighter-rouge,
+.notice {
+  background: var(--vibe-panel);
+  border: 1px solid $border-color;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
+}
+
+.meta-list li { background: var(--vibe-chip); }

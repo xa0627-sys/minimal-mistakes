@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title>Vibe Coding Alley Run at Night</title>
+  <desc>Night run through a calm alley with teal neon signage and a coffee cup.</desc>
+  <defs>
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2e3f" />
+      <stop offset="100%" stop-color="#0c1824" />
+    </linearGradient>
+    <linearGradient id="rain" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6ad8ff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#3fa4c5" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#nightSky)" />
+  <rect y="520" width="1600" height="380" fill="#0b101a" />
+  <g fill="#0f1927" opacity="0.9">
+    <rect x="60" y="200" width="260" height="500" rx="10" />
+    <rect x="380" y="170" width="240" height="540" rx="12" />
+    <rect x="720" y="150" width="260" height="560" rx="12" />
+    <rect x="1100" y="190" width="240" height="520" rx="10" />
+    <rect x="1400" y="210" width="180" height="500" rx="10" />
+  </g>
+  <g stroke="#5ee0e0" stroke-width="6" stroke-linecap="round" opacity="0.28">
+    <path d="M120 260 v320" />
+    <path d="M460 240 v340" />
+    <path d="M840 230 v350" />
+    <path d="M1200 260 v320" />
+  </g>
+  <g fill="#102330" opacity="0.7">
+    <rect x="260" y="320" width="280" height="110" rx="12" />
+    <rect x="1030" y="340" width="300" height="120" rx="12" />
+  </g>
+  <g stroke="#4be7c7" stroke-width="3" fill="none">
+    <rect x="275" y="335" width="250" height="80" rx="10" />
+    <polyline points="300,375 340,350 390,365 440,345 500,380" />
+    <rect x="1050" y="360" width="260" height="80" rx="10" />
+    <polyline points="1080,390 1120,365 1180,395 1250,360 1290,385" />
+  </g>
+  <g>
+    <path d="M640 530 q-22 40 -18 90 q6 90 -12 130" fill="none" stroke="#6ad8ff" stroke-width="8" opacity="0.6" />
+    <path d="M610 520 q40 -50 30 -120 q-10 -80 50 -110 q70 -30 120 30" fill="none" stroke="#f2ae66" stroke-width="6" opacity="0.55" />
+  </g>
+  <g transform="translate(620 360) scale(1.05)">
+    <path d="M100 260 q10 -40 30 -70 q28 -40 38 -86 q20 -100 12 -124 q-10 -28 -48 -20 q-38 8 -54 50 q-16 48 -20 100 q-6 64 -2 124 q4 62 16 108 q12 48 34 70 q24 26 54 26 q50 0 70 -60 q10 -28 12 -90 q-18 22 -46 22 q-34 0 -50 -26 q-18 -34 4 -110 z" fill="#5ee0e0" opacity="0.92" />
+    <path d="M82 190 q-5 28 12 48 q14 16 36 16 q26 0 42 -22 q14 -20 12 -44 q-2 -34 -26 -52 q-16 -12 -36 -6 q-38 10 -40 60 z" fill="#0b101a" opacity="0.95" />
+  </g>
+  <g fill="#53ffe6" opacity="0.85">
+    <circle cx="1360" cy="270" r="16" />
+    <circle cx="520" cy="250" r="14" />
+  </g>
+  <g fill="#5ee0e0" opacity="0.8" font-family="'Noto Sans TC', 'Inter', 'PingFang TC', 'Microsoft JhengHei', sans-serif" font-size="52" font-weight="600">
+    <text x="980" y="220">跑在城市巷弄間</text>
+    <text x="980" y="290">Vibe Coding</text>
+    <text x="980" y="360">的大叔筆記</text>
+  </g>
+  <g fill="#5ee0e0" opacity="0.8">
+    <path d="M990 410 h70 a12 12 0 0 1 12 12 v70 a12 12 0 0 1 -12 12 h-70 a12 12 0 0 1 -12 -12 v-70 a12 12 0 0 1 12 -12 z" opacity="0.2" />
+    <path d="M1008 438 h34" stroke="#5ee0e0" stroke-width="3" />
+    <path d="M1008 454 h28" stroke="#5ee0e0" stroke-width="3" />
+    <path d="M1016 470 h22" stroke="#5ee0e0" stroke-width="3" />
+  </g>
+  <g fill="#b3d9ff" opacity="0.25">
+    <rect x="120" y="180" width="1360" height="720" fill="url(#rain)" />
+  </g>
+  <g fill="none" stroke="#3fa4c5" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <path d="M160 120 v30" />
+    <path d="M300 80 v36" />
+    <path d="M460 110 v30" />
+    <path d="M720 70 v40" />
+    <path d="M1280 90 v34" />
+    <path d="M1440 60 v36" />
+  </g>
+  <g fill="#5ee0e0" opacity="0.7">
+    <rect x="1020" y="570" width="120" height="14" rx="7" />
+    <rect x="1180" y="590" width="90" height="14" rx="7" />
+    <rect x="860" y="585" width="70" height="14" rx="7" />
+  </g>
+</svg>

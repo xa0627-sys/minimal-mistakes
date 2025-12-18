@@ -12,16 +12,16 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "vibe-alley-sunset" # "air", "aqua", "contrast", "dark", "dirt", "mint", "neon", "plum", "sunrise", "vibe-alley-night", "vibe-alley-fusion", "vibe-alley-graphite"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "zh-TW"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "跑在城市巷弄間 Vibe Coding 的大叔筆記"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+subtitle                 : "慢跑、AI、城市巷弄的生活筆記"
+name                     : "Vibe Coding"
+description              : "大叔用慢跑與隨性寫 Code 的節奏，分享工作、家庭、運動與 AI 工具的平衡日常。"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Vibe Coding"
+  avatar           : "/assets/images/vibe-coding-night.svg"
+  bio              : "Vibe Coding 就是我的人生哲學——別太認真，別太急。慢跑比快跑舒服，隨性寫 Code 比嚴謹語法自在。"
+  location         : "台北市巷弄"
   email            :
   links:
     - label: "Email"

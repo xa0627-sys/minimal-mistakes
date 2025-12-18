@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1800" viewBox="0 0 1600 1800">
+  <defs>
+    <linearGradient id="dawn" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0c0f2f"/>
+      <stop offset="40%" stop-color="#16244a"/>
+      <stop offset="100%" stop-color="#ff8b42"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b1027"/>
+      <stop offset="100%" stop-color="#0d1c38"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1800" fill="url(#dawn)"/>
+  <rect y="880" width="1600" height="920" fill="url(#floor)"/>
+  <g opacity="0.6">
+    <path d="M0 960 C400 900 1200 900 1600 960 L1600 1080 L0 1080 Z" fill="#0e2f46"/>
+    <path d="M0 1180 C420 1100 1180 1100 1600 1180 L1600 1280 L0 1280 Z" fill="#0c1f33"/>
+  </g>
+  <g fill="#14d8ff" opacity="0.8">
+    <rect x="260" y="360" width="120" height="420" rx="12" opacity="0.4"/>
+    <rect x="1240" y="380" width="120" height="420" rx="12" opacity="0.4"/>
+    <text x="250" y="360" font-size="80" font-family="'Noto Sans TC','Noto Sans', 'Microsoft JhengHei', sans-serif" font-weight="700">幸福里</text>
+    <text x="1220" y="360" font-size="80" font-family="'Noto Sans TC','Noto Sans', 'Microsoft JhengHei', sans-serif" font-weight="700">城市光</text>
+  </g>
+  <g transform="translate(620 520)">
+    <ellipse cx="200" cy="890" rx="360" ry="80" fill="#050911" opacity="0.75"/>
+    <path d="M214 360 q34 36 26 94 l-24 200 q-6 52 -54 46 l-110 -10 q-50 -4 -40 -64 l32 -200 q8 -48 56 -70 z" fill="#142c5c" stroke="#1ce1ff" stroke-width="8"/>
+    <path d="M134 550 l-96 240 q-16 44 24 58 l54 18 q40 14 56 -28 l92 -234" fill="#0f1f44" stroke="#1ce1ff" stroke-width="8"/>
+    <path d="M260 580 l116 220 q20 38 -20 64 l-52 32 q-34 20 -54 -16 l-124 -240" fill="#0f1f44" stroke="#1ce1ff" stroke-width="8"/>
+    <path d="M220 80 q70 -30 122 20 42 38 30 108 -14 86 -94 120 -66 28 -124 -12" fill="#1b3f72" stroke="#1ce1ff" stroke-width="8"/>
+    <path d="M196 120 q22 -54 84 -40 62 14 76 72 10 42 -4 86 -22 72 -102 82 -52 8 -88 -38" fill="#d8edff"/>
+    <path d="M176 244 q-32 32 -58 32 -36 0 -58 -42 16 -78 94 -120" fill="#11223c" opacity="0.9"/>
+    <path d="M52 720 q180 -90 360 0" fill="none" stroke="#1ce1ff" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 14"/>
+  </g>
+  <g fill="#1ce1ff" font-family="'Noto Sans TC','Noto Sans', 'Microsoft JhengHei', sans-serif" font-size="70" font-weight="700" opacity="0.92">
+    <text x="260" y="1020">跑在城市巷弄間 · Vibe Coding 大叔筆記</text>
+  </g>
+  <g fill="#f5fbff" font-family="'Noto Sans TC','Noto Sans', 'Microsoft JhengHei', sans-serif" font-size="34" opacity="0.86">
+    <text x="260" y="1100">AI、資料視覺化與咖啡香陪伴的城市夜跑，</text>
+    <text x="260" y="1146">每一步都是與自己對話的節奏。</text>
+  </g>
+  <g stroke="#1ce1ff" stroke-width="6" fill="none" opacity="0.8">
+    <path d="M200 720 c180 -120 360 -120 540 0" stroke-dasharray="20 12"/>
+    <path d="M860 720 c180 -120 360 -120 540 0" stroke-dasharray="20 12"/>
+    <rect x="460" y="620" width="120" height="50" rx="10" opacity="0.6"/>
+    <rect x="1020" y="620" width="120" height="50" rx="10" opacity="0.6"/>
+  </g>
+  <g fill="#1ce1ff" opacity="0.8">
+    <circle cx="360" cy="1280" r="10"/>
+    <circle cx="380" cy="1240" r="8"/>
+    <rect x="370" y="1240" width="8" height="80" rx="4"/>
+  </g>
+</svg>

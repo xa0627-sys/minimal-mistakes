@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title>Vibe Coding Alley Run at Sunset</title>
+  <desc>Runner in a neon-lit alley with floating interface panels and a warm sunset horizon.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff9f4d" />
+      <stop offset="60%" stop-color="#fc466b" />
+      <stop offset="100%" stop-color="#0b0b16" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3be0dd" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#a066ff" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="street" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#151623" />
+      <stop offset="100%" stop-color="#0b0c13" />
+    </linearGradient>
+    <filter id="blurGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)" />
+  <rect y="480" width="1600" height="420" fill="url(#street)" />
+  <g fill="#0f1020" opacity="0.85">
+    <rect x="120" y="140" width="240" height="520" rx="12" />
+    <rect x="420" y="200" width="200" height="460" rx="10" />
+    <rect x="760" y="130" width="210" height="540" rx="12" />
+    <rect x="1080" y="190" width="220" height="500" rx="12" />
+    <rect x="1350" y="160" width="160" height="520" rx="10" />
+  </g>
+  <g stroke="#3be0dd" stroke-width="8" stroke-linecap="round" opacity="0.3">
+    <path d="M220 260 l0 320" />
+    <path d="M500 240 l0 340" />
+    <path d="M870 220 l0 360" />
+    <path d="M1180 250 l0 330" />
+  </g>
+  <path d="M800 520 q-40 50 -20 120 q30 90 -10 180" fill="none" stroke="#ff9f4d" stroke-width="10" opacity="0.65" />
+  <g fill="#18192b" filter="url(#blurGlow)" opacity="0.8">
+    <rect x="100" y="360" width="360" height="120" rx="14" />
+    <rect x="1140" y="300" width="320" height="140" rx="14" />
+  </g>
+  <g stroke="#3be0dd" stroke-width="3" fill="none">
+    <rect x="120" y="370" width="320" height="100" rx="10" />
+    <line x1="150" y1="400" x2="240" y2="400" />
+    <polyline points="160,430 200,410 240,425 280,405 320,415" />
+    <rect x="1160" y="320" width="280" height="100" rx="10" />
+    <polyline points="1180,360 1240,340 1300,355 1360,340 1410,370" />
+  </g>
+  <g fill="#ff4f8b" opacity="0.7">
+    <rect x="1460" y="240" width="80" height="220" rx="10" />
+    <rect x="560" y="260" width="80" height="200" rx="10" />
+  </g>
+  <g fill="#3be0dd" opacity="0.8">
+    <circle cx="1420" cy="260" r="18" />
+    <circle cx="600" cy="240" r="16" />
+    <circle cx="1220" cy="520" r="12" />
+  </g>
+  <g>
+    <path d="M840 360 q-20 -70 30 -120 q70 -70 180 -10" fill="none" stroke="#ffd166" stroke-width="6" opacity="0.7" />
+    <path d="M820 380 q-30 -80 40 -140 q90 -80 210 -20" fill="none" stroke="#3be0dd" stroke-width="6" opacity="0.6" />
+  </g>
+  <g transform="translate(720 320) scale(1.15)">
+    <path d="M120 260 q10 -40 30 -70 q30 -40 40 -90 q20 -110 10 -130 q-15 -30 -60 -20 q-40 10 -56 58 q-16 50 -20 110 q-5 70 0 130 q5 60 18 118 q12 52 36 80 q26 30 60 30 q56 0 78 -70 q10 -32 12 -100 q-20 24 -52 24 q-40 0 -56 -30 q-20 -40 4 -120 z" fill="#24e0d6" opacity="0.9" />
+    <path d="M96 190 q-4 26 12 46 q14 18 38 18 q30 0 48 -24 q16 -22 14 -48 q-2 -38 -28 -58 q-18 -16 -40 -10 q-40 10 -44 76 z" fill="#0b0c13" opacity="0.95" />
+  </g>
+  <g opacity="0.7" fill="#fefefe">
+    <circle cx="90" cy="150" r="2" />
+    <circle cx="180" cy="120" r="3" />
+    <circle cx="300" cy="80" r="2" />
+    <circle cx="1230" cy="140" r="3" />
+    <circle cx="1320" cy="90" r="2" />
+    <circle cx="1460" cy="110" r="3" />
+  </g>
+  <rect x="0" y="0" width="1600" height="900" fill="url(#glow)" opacity="0.08" />
+</svg>
