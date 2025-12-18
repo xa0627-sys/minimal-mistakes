@@ -476,6 +476,7 @@ zh-TW: &DEFAULT_ZH_HANT
   search_algolia_no_results  : "找不到結果"
   results_found              : "找到結果"
   back_to_top                : "回到頁首"
+  meta_label                 : "文章資訊"
 zh-HK:
   <<: *DEFAULT_ZH_HANT
 

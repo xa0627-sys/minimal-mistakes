@@ -3,6 +3,7 @@ layout: single
 title: "關於 Vibe Coding"
 permalink: /about/
 author_profile: true
+lang: zh-TW
 classes: wide
 header:
   overlay_image: /assets/images/vibe-coding-night.svg
