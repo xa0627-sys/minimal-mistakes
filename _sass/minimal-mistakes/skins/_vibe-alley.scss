@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Vibe Alley skin — combines the neon and night illustrations for a dual-tone alley feel
+   ========================================================================== */
+
+/* Colors */
+$background-color: #0c0f1a !default;
+$text-color: #f0f6ff !default;
+$primary-color: #1bd2c8 !default;
+$secondary-color: #ff6f91 !default;
+$muted-text-color: mix(#c6d7ff, $background-color, 65%) !default;
+$border-color: mix(#fff, $background-color, 17%) !default;
+$code-background-color: mix(#000, $background-color, 12%) !default;
+$code-background-color-dark: mix(#000, $background-color, 18%) !default;
+$form-background-color: mix(#000, $background-color, 14%) !default;
+$footer-background-color: mix($background-color, #1bd2c8, 25%) !default;
+$link-color: $primary-color !default;
+$link-color-hover: mix(#fff, $primary-color, 18%) !default;
+$link-color-visited: mix(#000, $primary-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix($text-color, $primary-color, 18%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 28%) !default;
+
+/* notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 94% !default;
+
+/* syntax highlighting */
+$base00: #0c0f1a !default;
+$base01: #131a2b !default;
+$base02: #1a2338 !default;
+$base03: #212d48 !default;
+$base04: #e9f4ff !default;
+$base05: #f3f8ff !default;
+$base06: #f9fbff !default;
+$base07: #ffffff !default;
+$base08: #ff6f91 !default;
+$base09: #ffb868 !default;
+$base0a: #ffd166 !default;
+$base0b: #62e1b4 !default;
+$base0c: #3be4e2 !default;
+$base0d: #6ac4ff !default;
+$base0e: #c58bff !default;
+$base0f: #f784a9 !default;
+
+$alley-neon: url("{{ "/assets/images/vibe-coding-neon.svg" | relative_url }}");
+$alley-night: url("{{ "/assets/images/vibe-coding-night.svg" | relative_url }}");
+
+body {
+  background-color: $background-color;
+  background-image: linear-gradient(135deg, rgba(27, 210, 200, 0.14), rgba(255, 111, 145, 0.12)),
+                    linear-gradient(90deg, rgba(12, 15, 26, 0.95), rgba(12, 15, 26, 0.5)),
+                    $alley-night;
+  background-blend-mode: normal, screen, normal;
+  background-repeat: no-repeat;
+  background-size: auto, cover, cover;
+  background-position: center top;
+}
+
+.page__hero--overlay {
+  background-image: linear-gradient(120deg, rgba(12, 15, 26, 0.85), rgba(12, 15, 26, 0.35)), $alley-neon;
+  background-size: cover;
+  background-position: center;
+  color: $text-color;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+.page__title {
+  color: $text-color;
+}
+
+.pagination--pager {
+  color: $text-color;
+  background-color: $secondary-color;
+  border-color: transparent;
+
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}
